@@ -13,5 +13,44 @@ However, if you want to do this for existing records, this sample script could b
  
 ```
 
+# Example run
 
+With a Filter 
+```bash
+node getSMSList.GroupbyCountry.js "{\"dateSent\":\"2017-03-15\"}"
+Got All Messages 16
+Enriching SMS Log by Country Code
+SMS Count Grouped by Country/SenderID c:
+{ GB: 7,
+  'Messenger:933728746748088': 4,
+  'Messenger:922267141233367': 2,
+  DIAWI: 3 }
+```
 
+Without any Filter
+```bash
+node getSMSList.GroupbyCountry.js
+Got All Messages 741
+Enriching SMS Log by Country Code
+SMS Count Grouped by Country/SenderID c:
+{ '36300': 2,
+  US: 72,
+  ABHIJIT: 26,
+  GB: 366,
+  'Messenger:933728746748088': 38,
+  'SHOE STORE': 13,
+  'Messenger:922267141233367': 55,
+  DIAWI: 3,
+  ABHIJITM: 82,
+  CANSTOPME: 1,
+  'ABHIJIT M': 26,
+  'Messenger:913566888754207': 1,
+  'messenger:933728746748088': 42,
+  'Messenger:1196791923776576': 2,
+  'Messenger:1239918596018854': 7,
+  'messenger:10154147422919322': 1,
+  'Messenger:+933728746748088': 1,
+  'messenger:+10154147422919322': 1,
+  'messenger:+933728746748088': 2,
+ }
+```
