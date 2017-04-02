@@ -17,7 +17,7 @@ However, if you want to do this for existing records, this sample script could b
 
 With a Filter 
 ```bash
-node getSMSList.GroupbyCountry.js "{\"dateSent\":\"2017-03-15\"}"
+>node getSMSList.GroupbyCountry.js "{\"dateSent\":\"2017-03-15\"}"
 Got All Messages 16
 Enriching SMS Log by Country Code
 SMS Count Grouped by Country/SenderID c:
@@ -29,7 +29,7 @@ SMS Count Grouped by Country/SenderID c:
 
 Without any Filter
 ```bash
-node getSMSList.GroupbyCountry.js
+>node getSMSList.GroupbyCountry.js
 Got All Messages 741
 Enriching SMS Log by Country Code
 SMS Count Grouped by Country/SenderID c:
@@ -54,3 +54,5 @@ SMS Count Grouped by Country/SenderID c:
   'messenger:+933728746748088': 2,
  }
 ```
+
+>Note : If the sender ID is anything except a valid number , that very sender id is used for group by ( see examples above)
